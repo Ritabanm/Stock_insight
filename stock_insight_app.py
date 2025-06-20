@@ -27,7 +27,7 @@ company = st.selectbox("Choose a stock:", list(tickers.keys()))
 symbol = tickers[company]
 api_key = "demo"  # Replace with your API key
 
-url = f"https://financialmodelingprep.com/api/v3/quote/{symbol}?apikey=DT0GK2o268NexFPt2TqAnxenH3H3iRHK"
+url = f"https://financialmodelingprep.com/api/v3/quote/{symbol}?apikey"
 response = requests.get(url)
 
 if response.status_code == 200:
